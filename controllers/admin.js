@@ -5,9 +5,9 @@ const { profitOrLossForOneTrade } = require('../utils/CustomFunctions'); // Adju
 
 exports.getAllUsersWithPagination = async (req, res, next) => {
     try {
-        
-        const page = parseInt(req.query.page) || 1;
-        const pageSize = parseInt(req.query.pageSize) || 5;
+
+        const page = parseInt(req.params.page) || 1;
+        const pageSize = parseInt(req.params.pageSize) || 5;
         const skip = (page - 1) * pageSize;
 
         let users = await User.find({})
