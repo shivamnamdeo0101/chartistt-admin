@@ -1,0 +1,17 @@
+[
+    {
+        "_id": "1",
+        "label": "Morning",
+        "value": "morning"
+    },
+    {
+        "_id": "2",
+        "label": "Mid",
+        "value": "mid"
+    },
+    {
+        "_id": "3",
+        "label": "Last",
+        "value": "last"
+    }
+]

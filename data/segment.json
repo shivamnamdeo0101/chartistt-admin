@@ -1,0 +1,29 @@
+[
+    {
+      "label": "Equity",
+      "value": "equity"
+    },
+    {
+      "label": "Future",
+      "value": "future"
+    },
+    {
+      "label": "Option",
+      "value": "option"
+    },
+    {
+      "label": "Commodity",
+      "value": "commodity"
+    },
+    {
+      "label": "Currency",
+      "value": "currency"
+    },
+    {
+      "label": "Crypto Currency",
+      "value": "crypto"
+    }
+  ]
+
+
+  

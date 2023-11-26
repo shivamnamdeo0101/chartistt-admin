@@ -1,0 +1,67 @@
+[
+    {
+        "label": "Angry",
+        "value": "angry"
+    },
+    {
+        "label": "Confident",
+        "value": "confident"
+    },
+    {
+        "label": "Excited",
+        "value": "excited"
+    },
+    {
+        "label": "Fear",
+        "value": "fear"
+    },
+    {
+        "label": "Fomo",
+        "value": "fomo"
+    },
+    {
+        "label": "Greedy",
+        "value": "greedy"
+    },
+    {
+        "label": "Happy",
+        "value": "happy"
+    },
+    {
+        "label": "Joyful",
+        "value": "joyful"
+    },
+    {
+        "label": "Lazy",
+        "value": "lazy"
+    },
+    {
+        "label": "Non Confident",
+        "value": "nonconfident"
+    },
+    {
+        "label": "Other",
+        "value": "other"
+    },
+    {
+        "label": "Regret",
+        "value": "regret"
+    },
+    {
+        "label": "Sad",
+        "value": "sad"
+    },
+    {
+        "label": "Sentimental",
+        "value": "sentimental"
+    },
+    {
+        "label": "Sorrow",
+        "value": "sorrow"
+    },
+
+    {
+        "label": "Gut Feeling",
+        "value": "gutfelling"
+    }
+]

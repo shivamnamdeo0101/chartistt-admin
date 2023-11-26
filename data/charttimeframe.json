@@ -1,0 +1,63 @@
+[
+    {
+      "label": "1min",
+      "value": "1min"
+    },
+    {
+      "label": "2min",
+      "value": "2min"
+    },
+    {
+      "label": "3min",
+      "value": "3min"
+    },
+    {
+      "label": "5min",
+      "value": "5min"
+    },
+    {
+      "label": "10min",
+      "value": "10min"
+    },
+    {
+      "label": "15min",
+      "value": "15min"
+    },
+    {
+      "label": "30min",
+      "value": "30min"
+    },
+    {
+      "label": "45min",
+      "value": "45min"
+    },
+    {
+      "label": "1hr",
+      "value": "1hr"
+    },
+    {
+      "label": "2hr",
+      "value": "2hr"
+    },
+    {
+      "label": "3hr",
+      "value": "3hr"
+    },
+    {
+      "label": "4hr",
+      "value": "4hr"
+    },
+    {
+      "label": "5hr",
+      "value": "5hr"
+    },
+    {
+      "label": "1week",
+      "value": "1week"
+    },
+    {
+      "label": "1month",
+      "value": "1month"
+    }
+  ]
+  

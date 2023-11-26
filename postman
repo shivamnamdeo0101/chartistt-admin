@@ -1,0 +1,667 @@
+{
+	"info": {
+		"_postman_id": "7559d8dd-d7a5-40db-aa90-c518c7bbbda8",
+		"name": "Journal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21625464"
+	},
+	"item": [
+		{
+			"name": "Google Auth",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"shivamnamdeo14jan+1@gmail.com\",\r\n    \"fullName\":\"Shivam Namdeo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/google-auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"google-auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Email Auth Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"shivamnamdeo0101@gmail.com\",\r\n    \"password\": \"90892418\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/email-auth-login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"email-auth-login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Email Auth Reg",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\":\"Shivam\",\r\n    \"email\":\"shivamnamdeoa01019@gmail.com\",\r\n    \"contact\":\"917828353818114\",\r\n    \"password\":\"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/email-auth-reg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"email-auth-reg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZjIxYTZiM2M3Mjg0YjJjZDYxZGRmNSIsImlhdCI6MTY5MzU4ODk5MywiZXhwIjoxNjk2NjEyOTkzfQ.ovy9AjKYq-2Mci5ShjJUCFVg-oN3FAZYVgZtfEUtIUo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"userId\":\"64f1cf8b770ae5391ca83149\",\r\n    \"fullName\":\"Shivam Namdeo\",\r\n    \"email\":\"shivamnamdeo01@gmail.com\",\r\n    \"contact\":\"917838353781\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/update-profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"update-profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZjFjZjhiNzcwYWU1MzkxY2E4MzE0OSIsImlhdCI6MTY5MzU4ODIwNiwiZXhwIjoxNjk2NjEyMjA2fQ.z99Uw3Zp_ekHbiufs_7PjI8_MpLTTJEDruTucg7GKFw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/private/profile/64f21a6b3c7284b2cd61ddf5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"private",
+						"profile",
+						"64f21a6b3c7284b2cd61ddf5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Broker",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZjIxYTZiM2M3Mjg0YjJjZDYxZGRmNSIsImlhdCI6MTY5MzU4ODk5MywiZXhwIjoxNjk2NjEyOTkzfQ.ovy9AjKYq-2Mci5ShjJUCFVg-oN3FAZYVgZtfEUtIUo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amtDeposit\": \"25\",\r\n    \"brokerName\": \"groww\",\r\n    \"userId\": \"64f1cf9c770ae5391ca8314c\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/private/brokers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"private",
+						"brokers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All User Broker",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZjYyYzAyNzRiMTZhYTdhOGFjYzg5OSIsImlhdCI6MTY5Mzg1NDcyMywiZXhwIjoxNjk2ODc4NzIzfQ.ps1s9YY0rc4O-QiAOp3CnN64jVoVMBdtZCWhKCmoRlc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/private/brokers/64fd6d62ec5827c370246e38",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"private",
+						"brokers",
+						"64fd6d62ec5827c370246e38"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Broker",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZjM3YzczZDRmMzhjNTkyNjAyNTU3NyIsImlhdCI6MTY5MzcxMTUwMywiZXhwIjoxNjk2NzM1NTAzfQ.YRDCRdizBzOn4t8Cm-RogHkvFtlNjtkskjbnRmRZ1GU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"64f37c73d4f38c5926025577\",\r\n    \"broker\": {\r\n        \"brokerId\": \"64f4155bb3e422704d858eb4\",\r\n        \"amtDeposit\": 8000,\r\n        \"brokerName\": \"groww\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/private/brokers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"private",
+						"brokers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Broker",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZjIxYTZiM2M3Mjg0YjJjZDYxZGRmNSIsImlhdCI6MTY5MzU4ODk5MywiZXhwIjoxNjk2NjEyOTkzfQ.ovy9AjKYq-2Mci5ShjJUCFVg-oN3FAZYVgZtfEUtIUo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"64f21a6b3c7284b2cd61ddf5\",\r\n    \"brokerId\": \"64f226bdba1c94f28d82222f\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/private/brokers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"private",
+						"brokers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Trade",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZjYyYzAyNzRiMTZhYTdhOGFjYzg5OSIsImlhdCI6MTY5Mzg1NDcyMywiZXhwIjoxNjk2ODc4NzIzfQ.ps1s9YY0rc4O-QiAOp3CnN64jVoVMBdtZCWhKCmoRlc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"64f62c0274b16aa7a8acc899\",\r\n    \"trade\": {\r\n        \"brokerId\":\"64f62d57d3550e7af578c0ce\",\r\n        \"date\": 198797899199,\r\n        \"tradeName\": \"Infosys\",\r\n        \"action\": \"buy\",\r\n        \"segment\": \"Equity\",\r\n        \"tradeType\": \"Intraday\",\r\n        \"chartTimeFrame\": \"1 min\",  \r\n        \"mindSetBeforeTrade\": \"Angry\",\r\n        \"mindSetAfterTrade\": \"Angry\",\r\n        \"session\":\"morning\",\r\n        \"quantity\": 10,\r\n        \"enrtyPrice\": 500,\r\n        \"exitPrice\": 550,\r\n        \"entryNote\": \"Bye\",\r\n        \"exitNote\": \"Hello\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://chartistt-journal.onrender.com/api/private/trades",
+					"protocol": "https",
+					"host": [
+						"chartistt-journal",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"private",
+						"trades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Trade",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZjIxYTZiM2M3Mjg0YjJjZDYxZGRmNSIsImlhdCI6MTY5MzU4ODk5MywiZXhwIjoxNjk2NjEyOTkzfQ.ovy9AjKYq-2Mci5ShjJUCFVg-oN3FAZYVgZtfEUtIUo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"64f21a6b3c7284b2cd61ddf2\",\r\n    \"tradeId\": \"64f23781119866786f9de39c\",\r\n    \"trade\": {\r\n        \"brokerId\":\"64f226bdba1c94f28d82222f\",\r\n        \"date\": 198797899199,\r\n        \"tradeName\": \"Tata Mototors\",\r\n        \"action\": \"buy\",\r\n        \"segment\": \"Equity\",\r\n        \"tradeType\": \"Intraday\",\r\n        \"chartTimeFrame\": \"1 min\",  \r\n        \"mindSetBeforeTrade\": \"Angry\",\r\n        \"mindSetAfterTrade\": \"Angry\",\r\n        \"session\":\"morning\",\r\n        \"quantity\": 10,\r\n        \"enrtyPrice\": 500,\r\n        \"exitPrice\": 550,\r\n        \"entryNote\": \"Bye\",\r\n        \"exitNote\": \"Hello\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/private/trades",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"private",
+						"trades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All User Trade",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZmQ2ZDYyZWM1ODI3YzM3MDI0NmUzOCIsImlhdCI6MTY5NDQ5ODY5MywiZXhwIjoxNjk3NTIyNjkzfQ.N1iiH5CplSwekAI0OSdrYDVuJ_L_rr0yXg-W3bJBhtg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://chartistt-journal.onrender.com/api/private/trades-filter/64fd6d62ec5827c370246e38/-1/date/0/1000000",
+					"protocol": "https",
+					"host": [
+						"chartistt-journal",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"private",
+						"trades-filter",
+						"64fd6d62ec5827c370246e38",
+						"-1",
+						"date",
+						"0",
+						"1000000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Trade",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZjIxYTZiM2M3Mjg0YjJjZDYxZGRmNSIsImlhdCI6MTY5MzU4ODk5MywiZXhwIjoxNjk2NjEyOTkzfQ.ovy9AjKYq-2Mci5ShjJUCFVg-oN3FAZYVgZtfEUtIUo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"64f21a6b3c7284b2cd61ddf5\",\r\n    \"tradeId\": \"64f23781119866786f9de39c\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/private/trades",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"private",
+						"trades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Notification",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZjFjZjhiNzcwYWU1MzkxY2E4MzE0OSIsImlhdCI6MTY5MzU4MzM3MywiZXhwIjoxNjk2NjA3MzczfQ.g0_od07RxOMsoi0yJNRjmgo080asaRFhOdEEMp84Agg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Test Notification\",\r\n    \"text\":\"Hello\",\r\n    \"linkTitle\":\"Hello Google\",\r\n    \"linkUrl\":\"https://chat.openai.com/chat\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/private/notifications",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"private",
+						"notifications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Notification",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Data",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "OTP-SEND",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to\":\"+917828353784\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/otp-send",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"otp-send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OTP-VErify",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Reset Pass",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Send Temp Pass",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Send Welcome Email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"shivamnamdeo0101@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/send-wellcome-email",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"send-wellcome-email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Calender Trade",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

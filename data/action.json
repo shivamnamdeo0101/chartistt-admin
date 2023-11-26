@@ -1,0 +1,12 @@
+[
+    {
+     "id":"1",
+     "label":"Buy",
+     "value":"buy"
+    },
+    {
+     "id":"2",
+     "label":"Sell",
+     "value":"sell"
+    }
+ ]

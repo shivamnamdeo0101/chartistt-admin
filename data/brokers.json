@@ -1,0 +1,104 @@
+[
+    {
+        "id": "1",
+        "label": "5Paisa",
+        "value": "5Paisa",
+        "iconLink": "https://ik.imagekit.io/lajz2ta7n/Brokers/5paise.png"
+    },
+    {
+        "id": "2",
+        "label": "Angle One",
+        "value": "Angle One",
+        "iconLink": "https://ik.imagekit.io/lajz2ta7n/Brokers/Angle_One.png"
+    },
+    {
+        "id": "3",
+        "label": "Axis Direct",
+        "value": "Axis Direct",
+        "iconLink": "https://ik.imagekit.io/lajz2ta7n/Brokers/Axis_Direct.png"
+    },
+    {
+        "id": "4",
+        "label": "Bajaj Finserv",
+        "value": "Bajaj Finserv",
+        "iconLink": "https://ik.imagekit.io/lajz2ta7n/Brokers/Bajaj_Finserv.png"
+    },
+    {
+        "id": "5",
+        "label": "Dhan",
+        "value": "Dhan",
+        "iconLink": "https://ik.imagekit.io/lajz2ta7n/Brokers/Dhan.png"
+    },
+    {
+        "id": "6",
+        "label": "Espresso By Sharekhan",
+        "value": "Espresso By Sharekhan",
+        "iconLink": "https://ik.imagekit.io/lajz2ta7n/Brokers/Espresso.png"
+    },
+    {
+        "id": "7",
+        "label": "Fyers",
+        "value": "Fyers",
+        "iconLink": "https://ik.imagekit.io/lajz2ta7n/Brokers/Fyers.png"
+    },
+    {
+        "id": "8",
+        "label": "Groww",
+        "value": "Groww",
+        "iconLink": "https://ik.imagekit.io/lajz2ta7n/Brokers/Groww.png"
+    },
+    {
+        "id": "9",
+        "label": "HDFC Securities",
+        "value": "HDFC Securities",
+        "iconLink": "https://ik.imagekit.io/lajz2ta7n/Brokers/HDFC_Securities.png"
+    },
+    {
+        "id": "10",
+        "label": "IIFL Securities",
+        "value": "IIFL Securities",
+        "iconLink": "https://ik.imagekit.io/lajz2ta7n/Brokers/IIFL.png"
+    },
+
+    {
+        "id": "11",
+        "label": "HDFC Securities",
+        "value": "HDFC Securities",
+        "iconLink": "https://ik.imagekit.io/lajz2ta7n/Brokers/HDFC_Securities.png"
+    },
+    {
+        "id": "12",
+        "label": "ICICI Direct",
+        "value": "ICICI Direct",
+        "iconLink": "https://ik.imagekit.io/lajz2ta7n/Brokers/ICICI_Direct.png"
+    },
+    {
+        "id": "13",
+        "label": "Angle One",
+        "value": "Angle One",
+        "iconLink": "https://ik.imagekit.io/lajz2ta7n/Brokers/Angle_One.png"
+    },
+    {
+        "id": "14",
+        "label": "Axis Direct",
+        "value": "Axis Direct",
+        "iconLink": "https://ik.imagekit.io/lajz2ta7n/Brokers/Axis_Direct.png"
+    },
+    {
+        "id": "15",
+        "label": "Zerodha",
+        "value": "Zerodha",
+        "iconLink": "https://ik.imagekit.io/lajz2ta7n/Brokers/zerodha.png"
+    },
+    {
+        "id": "16",
+        "label": "others",
+        "value": "others",
+        "iconLink": "https://ui-avatars.com/api/?name=Others&background=random&color=fff"
+    }
+]
+
+
+
+
+

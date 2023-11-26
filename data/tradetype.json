@@ -1,0 +1,17 @@
+[
+    {
+        "_id": "1",
+        "label": "IntraDay",
+        "value": "intraday"
+    },
+    {
+        "_id": "2",
+        "label": "Positional",
+        "value": "positional"
+    },
+    {
+        "_id": "3",
+        "label": "Investment",
+        "value": "investment"
+    }
+]
