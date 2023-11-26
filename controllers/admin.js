@@ -5,14 +5,14 @@ const { profitOrLossForOneTrade } = require('../utils/CustomFunctions'); // Adju
 
 exports.getAllUsersWithPagination = async (req, res, next) => {
     try {
-        const page = parseInt(req.query.page) || 1; // default to page 1 if not provided
-        const pageSize = parseInt(req.query.pageSize) || 5; // default to a page size of 10 if not provided
-
-        // Calculate the skip value based on the page number and page size
+        
+        const page = parseInt(req.query.page) || 1;
+        const pageSize = parseInt(req.query.pageSize) || 5;
         const skip = (page - 1) * pageSize;
 
-        // Use the find method with skip and limit for pagination
         let users = await User.find({})
+            .skip(skip)
+            .limit(pageSize);
 
         users = users.map(user => {
             // Calculate total profit or loss for all trades of the user
