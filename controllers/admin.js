@@ -26,6 +26,8 @@ exports.getAllUsersWithPagination = async (req, res, next) => {
                 fullName: user.fullName,
                 profitOrLoss: parseFloat(totalProfitOrLoss).toFixed(2),
                 isProfit,
+                contact:user.contact,
+                active:user.active,
                 email:user.email,
                 avatar:user.avatar
             };
