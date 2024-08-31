@@ -32,8 +32,9 @@ const UserRef = new mongoose.Schema({
 
     contact: {
         type: Number,
-        default: '' ,
-        unique: true
+        default: null ,
+        unique: true,
+        sparse: true  // sparse allows multiple nulls in unique index
         
     },
     joinedOn: {
