@@ -25,7 +25,6 @@ const sendPushNotification = async (payload) => {
       'Content-Type': 'application/json'
     },
     data: data
-    data: data
   };
 
 
