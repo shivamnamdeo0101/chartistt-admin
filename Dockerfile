@@ -5,4 +5,4 @@ RUN npm install -g nodemon
 RUN npm install
 COPY . .
 EXPOSE 5000
-CMD [ "nodemon", "index.js" ]
+CMD [ "nodemon", "server.js" ]
