@@ -25,7 +25,9 @@ const sendPushNotification = async (payload) => {
       'Content-Type': 'application/json'
     },
     data: data
+    data: data
   };
+
 
   await axios(config)
     .then(function (response) {
@@ -36,4 +38,5 @@ const sendPushNotification = async (payload) => {
     });
 }
 
+module.exports.sendPushNotification = sendPushNotification;
 module.exports.sendPushNotification = sendPushNotification;

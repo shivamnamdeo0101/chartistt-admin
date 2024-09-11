@@ -8,7 +8,7 @@ const cors = require('cors');
 const path = require('path');
 
 
-
+app.use(cors())
 connectDB();
 
 app.use(express.json());
