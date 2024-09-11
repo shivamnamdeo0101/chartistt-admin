@@ -6,7 +6,7 @@ const { sendPushNotification } = require("../utils/sendPushNotification");
 exports.addNotification = async (req, res, next) => {
     try {
       
-        const notification = await Notification.create(req.body);
+       const notification = await Notification.create(req.body);
         await sendPushNotification(req.body)
 
         console.log("<=========== addNotification ==== Req ============>")
