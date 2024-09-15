@@ -51,7 +51,9 @@ const UserRef = new mongoose.Schema({
         brokerName: {
             type: String,
             unique:true,
+            default:null,
             required: [true, "Please provide brokerName"],
+            sparse: true  // sparse allows multiple nulls in unique index
         },
         amtDeposit: {
             type: Number,
