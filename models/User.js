@@ -9,16 +9,16 @@ const UserRef = new mongoose.Schema({
     email: {
         type: String,
         unique: true,
-        required:[true,"Email is required"],
-        default: '' 
+        required: [true, "Email is required"],
+        default: ''
     },
     fullName: {
         type: String,
-        default: '' 
+        default: ''
     },
     password: {
         type: String,
-        default: '' 
+        default: ''
     },
     avatar: {
         type: String,
@@ -32,30 +32,28 @@ const UserRef = new mongoose.Schema({
 
     contact: {
         type: Number,
-        default: null ,
-        unique: true,
-        sparse: true  // sparse allows multiple nulls in unique index
-        
+        default: null,
+
     },
     joinedOn: {
         type: Number,
         default: Date.now()
     },
-    
+
     updateOn: {
         type: Number,
         default: Date.now()
     },
     brokers: [{
-        
+
         brokerName: {
             type: String,
-            unique:true,
+            default: null,
             required: [true, "Please provide brokerName"],
         },
         amtDeposit: {
             type: Number,
-            default:0,
+            default: 0,
             required: [true, "Please provide deposit amount"],
         },
         updateOn: {
@@ -68,7 +66,7 @@ const UserRef = new mongoose.Schema({
     trades: [{
 
         brokerId: {
-            type: mongoose.Schema .Types.ObjectId,
+            type: mongoose.Schema.Types.ObjectId,
             default: null
         },
         date: {
@@ -186,6 +184,10 @@ UserRef.methods.getSignedJwtToken = function () {
         expiresIn: process.env.JWT_EXPIRE,
     });
 };
+
+// Create a partial index that enforces uniqueness only for non-null values
+UserRef.index({ contact: 1 }, { unique: true, partialFilterExpression: { contact: { $ne: null } } });
+UserRef.index({ 'brokers.brokerName': 1 }, { unique: true, partialFilterExpression: { 'brokers.brokerName': { $ne: null } } });
 
 const User = mongoose.model("User", UserRef);
 
