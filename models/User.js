@@ -49,7 +49,6 @@ const UserRef = new mongoose.Schema({
         brokerName: {
             type: String,
             default: null,
-            default:null,
             required: [true, "Please provide brokerName"],
             sparse: true  // sparse allows multiple nulls in unique index
         },
